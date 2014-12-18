@@ -37,6 +37,12 @@ io.on('connection', function(socket){
   });
 });
 
+
+
 http.listen(3000, function(){
   console.log('listening on *:3000');
 });
+// This code binds to an environment variable with a default of localhost
+// http.listen(process.env.PORT || 3000, function(){
+//   console.log('listening on', http.address().port);
+// });
